@@ -1,0 +1,33 @@
+# JARVIS-OS Local Sovereign System Configuration
+
+system:
+  name: "JARVIS-OS"
+  version: "1.0.0-beta.1"
+  mode: "development" # development | production | sandbox
+  log_level: "INFO"
+  idle_sleep_seconds: 1.0
+
+models:
+  primary: "llama3:8b" # Ollama model name for general intent reasoning
+  coder: "deepseek-coder:6.7b" # Special coder model
+  vision: "llava"
+  temperature: 0.2
+  context_window: 4096
+
+memory:
+  type: "sqlite"
+  database_path: "./database/jarvis_memory.db"
+  auto_compact: true
+  history_limit: 100
+
+voice:
+  provider: "piper" # piper | gtts | offline
+  wake_word: "hey jarvis"
+  speech_rate: 175
+  whisper_model: "small"
+  microphone_index: 0
+
+security:
+  strict_sandbox: true
+  allow_network: false
+  dangerous_actions_regex: "rm\\s+-rf|sudo\\b|chmod\\b|chown\\b|wget|curl\\s+[^\\s]+\\s+--to-file"

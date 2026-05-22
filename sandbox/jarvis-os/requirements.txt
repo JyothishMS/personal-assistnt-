@@ -1,0 +1,9 @@
+ollama>=0.2.1
+psutil>=5.9.8
+pyautogui>=0.9.54
+playwright>=1.41.2
+pyyaml>=6.0.1
+sounddevice>=0.4.15
+numpy>=1.26.4
+whisper-ctranslate2>=0.4.5
+gTTS>=2.5.1

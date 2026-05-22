@@ -1,0 +1,6 @@
+{
+  "name": "JARVIS-OS Console",
+  "description": "Interactive personal AI assistant called JARVIS, delivering local voice engine simulation, file and app control shortcuts, mobile pairing emulator, and an autonomous goal executor planner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
